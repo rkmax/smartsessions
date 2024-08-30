@@ -9,7 +9,7 @@ import { ModeCode as ExecutionMode, ExecType, CallType, CALLTYPE_BATCH, CALLTYPE
 import { EncodeLib } from "contracts/lib/EncodeLib.sol";
 import { ExecutionLib as ExecutionLib } from "contracts/lib/ExecutionLib.sol";
 import "contracts/DataTypes.sol";
-import "forge-std/Console2.sol";
+import "forge-std/console2.sol";
 
 interface IPermissionEnabled {
     function isPermissionEnabled(
@@ -123,7 +123,7 @@ contract UserOperationBuilder is IUserOperationBuilder {
         }
     }
 
-    /* 
+    /*
     TODO: add formatERC1271Signature(
         address smartAccount,
         bytes calldata signature,
